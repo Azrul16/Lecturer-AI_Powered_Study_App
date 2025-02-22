@@ -119,7 +119,7 @@ With **Lecturer**, students can focus on **understanding** rather than spending 
 ### **Run the Project**  
 ```sh
 # Clone the repository
-git clone https://github.com/yourusername/lecturer-ai.git
+https://github.com/Azrul16/Lecturer-AI_Powered_Study_App.git
 cd lecturer-ai
 
 # Install dependencies
