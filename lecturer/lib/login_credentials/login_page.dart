@@ -2,6 +2,7 @@
 
 import 'package:flutter/material.dart';
 import 'package:lecturer/login_credentials/create_account.dart';
+import 'package:lecturer/screens/landing_screen.dart';
 
 class LoginPage extends StatefulWidget {
   const LoginPage({super.key});
@@ -136,7 +137,11 @@ class _LoginPageState extends State<LoginPage>
   // Neon-Glowing Login Button
   Widget _buildLoginButton() {
     return GestureDetector(
-      onTap: () {},
+      onTap: () {
+        Navigator.of(
+          context,
+        ).push(MaterialPageRoute(builder: (context) => LandingPage()));
+      },
       child: Container(
         padding: const EdgeInsets.symmetric(vertical: 15),
         width: double.infinity,
