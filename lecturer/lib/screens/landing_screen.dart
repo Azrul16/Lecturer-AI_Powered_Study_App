@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:lecturer/screens/floating_act.dart';
+
 import 'package:lecturer/screens/home_screen.dart';
 import 'package:lecturer/screens/notes_screen.dart';
 import 'package:lecturer/screens/question_screen.dart';
@@ -85,7 +85,12 @@ class _LandingPageState extends State<LandingPage> {
           ),
         ),
       ),
-      floatingActionButton: FloatingMicWidget(),
+      floatingActionButton: FloatingActionButton(
+        onPressed: () {},
+        hoverColor: Colors.orangeAccent,
+        backgroundColor: Colors.orangeAccent,
+        child: Icon(Icons.mic, color: Colors.black, size: 40),
+      ),
       floatingActionButtonLocation: FloatingActionButtonLocation.centerDocked,
       body: _screens[_selectedIndex],
     );
